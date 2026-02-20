@@ -1,0 +1,442 @@
+:root {
+    --bg-color: #F8F1E5;
+    --accent-color: #B58D48;
+    --text-color: #B58D48;
+    --nav-bg: #F2E9D9;
+}
+
+body {
+    margin: 0;
+    font-family: 'Serif', 'Georgia', serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Navigation */
+header {
+    position: sticky;       /* This "freezes" the header at the top */
+    top: 0;                 /* Tells it exactly where to stick */
+    z-index: 1000;          /* Ensures it stays on top of all other content */
+    background-color: var(--nav-bg);
+    
+    /* Adds a subtle line and shadow for definition */
+    border-bottom: 1px solid rgba(181, 141, 72, 0.2); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.divider {
+    width: 100%;               /* Line doesn't go edge-to-edge */
+    height: 2px;
+    background-color: var(--accent-color);
+    margin: 40px auto;        /* Centers the line and adds vertical space */
+    opacity: 0.6;             /* Makes it subtle */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 80px;
+    max-width: 1400px;      /* Prevents the nav from getting too wide on huge monitors */
+    margin: 0 auto;         /* Centers the nav content if a max-width is set */
+}
+
+.logo img {
+    height: 60px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    min-height: 80vh; /* Ensures the section has enough height to 'center' vertically */
+    align-items: center; /* Vertically centers both the text-half and the image-half */
+    padding: 0px 40px;
+}
+
+.short-number {
+    font-size: 1.25em;           /* Makes it noticeably shorter than NY Cafe */
+    vertical-align: baseline;  /* Keeps it on the same line */
+    display: inline-block;
+    margin-right: -1p;        /* Optional: adjust kerning if it looks too far away */
+    font-weight: bold;
+}
+
+.hero-content {
+    flex: 1.5; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    /* Keeps the block itself centered in the left half */
+    padding-left: 120px;
+}
+
+.hero-content h1, 
+.hero-content .tagline {
+    width: 80%;             /* Give them a defined width so they align relative to each other */
+    text-align: left;       /* Aligns the text inside to the left */
+    margin-left: 0;
+}
+
+.hero-content h1 {
+    font-size: 80px;
+    margin: 0;
+    line-height: 1.1;
+    display: flex;
+    align-items: baseline; /* Ensures the '1' and 'N' sit on the same bottom line */
+}
+
+.hero-content .tagline {
+    font-size: 40px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+/* Category Icons */
+.categories {
+    display: flex;
+    gap: 30px;
+    margin-top: 60px;
+    width: 80%;             /* Match the width of the text above for perfect alignment */
+    justify-content: flex-start; 
+}
+
+.category-item {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+.category-item img {
+    width: 150px;                /* Increased from 80px */
+    height: 150px;               /* Kept 1:1 ratio */
+    object-fit: contain;
+    display: block;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.category-item img:hover {
+    transform: scale(1.1);
+}
+
+/* Main Image with Rounded Gold Border */
+.hero-image .image-border {
+    border: 8px solid var(--accent-color);
+    border-radius: 25px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.hero-image {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -50px;
+    padding-right: 150px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+}
+
+/* The main 3-column container */
+.menu-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
+    gap: 30px;
+    padding: 5% 5%;
+}
+
+.menu-header {
+    text-align: center;
+    margin-bottom: 60px; /* Space between title and the 3 columns */
+}
+
+.main-menu-title {
+    font-size: 48px;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    font-weight: 300; /* Lighter weight looks more elegant */
+}
+
+.menu-subtitle {
+    font-size: 18px;
+    color: #888;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+/* Ensure the grid still has enough room */
+.restaurant-menu {
+    padding: 100px 5%;
+}
+
+/* Individual category block (Image next to Text) */
+.menu-category-item {
+    display: flex;
+    align-items: flex-start; /* Keeps title and image top-aligned */
+    gap: 15px; /* Space between image and text */
+}
+
+/* Make images smaller to fit the 3-column constraint */
+.side-image {
+    flex: 0 0 100px; /* Fixed width for the image */
+}
+
+.side-image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+.side-content {
+    flex: 1;
+}
+
+.category-title {
+    font-size: 20px; /* Slightly smaller to fit 3 columns */
+    color: var(--accent-color);
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(181, 141, 72, 0.2);
+    display: block;
+}
+
+.item-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-list li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* --- Order Section Container --- */
+.order-section {
+    padding: 100px 10%;
+    background-color: var(--bg-color); /* Matches beige from image 1 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- The White Card --- */
+.order-card {
+    background-color: white;
+    padding: 60px;
+    border-radius: 40px; /* Large rounded corners as seen in image 2 */
+    max-width: 1000px;
+    width: 100%;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+}
+
+.order-step {
+    margin-bottom: 60px;
+}
+
+.step-title {
+    color: var(--accent-color);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.step-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--accent-color);
+}
+
+/* --- Cake Grid & Notations --- */
+.cake-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.cake-item {
+    text-align: center;
+}
+
+.cake-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.cake-code {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--accent-color);
+    font-size: 14px;
+}
+
+/* --- Fillings Layout --- */
+.fillings-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.fillings-list { flex: 1.2; }
+.fillings-image { flex: 1; }
+
+.bullet-list {
+    list-style: none;
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.bullet-list li {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--accent-color);
+}
+
+.bullet-list li::before {
+    content: "•";
+    color: var(--accent-color);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.fillings-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* --- Footer Grid --- */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 50px;
+}
+
+.footer-sub {
+    font-size: 22px;
+    color: var(--accent-color);
+    margin: 25px 0 10px 0;
+}
+
+.map-placeholder img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.hours-list {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--accent-color);
+}
+
+.closed-day { font-weight: bold; }
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 35px;
+    cursor: pointer;
+}
+
+/* --- Site Footer --- */
+.site-footer {
+    padding: 40px 10%;
+    background-color: var(--nav-bg);
+    border-top: 1px solid rgba(181, 141, 72, 0.2);
+    text-align: center;
+}
+
+.footer-content p {
+    color: var(--accent-color);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-col{
+    padding-right: 50px;
+}
+
+.footer-links a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 13px;
+    margin: 0 10px;
+    opacity: 0.7;
+}
+
+/* --- Floating Island --- */
+.floating-island {
+    position: fixed;
+    right: 30px;        /* Distance from the right edge */
+    top: 50%;           /* Centers it vertically */
+    transform: translateY(-50%); /* Fine-tunes the vertical centering */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    padding: 15px 10px;
+    border-radius: 50px; /* Gives it the "island" or "pill" shape */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    z-index: 2000;      /* Ensures it stays above the map and header */
+    border: 1px solid rgba(181, 141, 72, 0.2);
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effects to make it feel interactive */
+.social-icon:hover img {
+    transform: scale(1.2);
+    filter: brightness(0.8); /* Slight darken on hover */
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 768px) {
+    .floating-island {
+        right: 15px;
+        padding: 10px 8px;
+    }
+    .social-icon img {
+        width: 25px;
+        height: 25px;
+    }
+}
