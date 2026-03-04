@@ -194,20 +194,23 @@ nav {
 /* Individual category block (Image next to Text) */
 .menu-category-item {
     display: flex;
+    padding-bottom: 40px;
     align-items: flex-start; /* Keeps title and image top-aligned */
     gap: 15px; /* Space between image and text */
 }
 
 /* Make images smaller to fit the 3-column constraint */
 .side-image {
-    flex: 0 0 100px; /* Fixed width for the image */
+    flex: 0 0 210px;    /* Forces the image container to stay exactly 210px wide */
+    display: flex;
+    align-items: center; 
+    justify-content: center;
 }
 
 .side-image img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 6px;
+    width: 210px;        /* Keep your desired width */
+    height: 210px;       /* Keep your desired height */
+    object-fit: contain; /* This prevents the image from being cut off */
     display: block;
 }
 
@@ -273,11 +276,39 @@ nav {
 }
 
 /* --- Cake Grid & Notations --- */
+/* --- Updated Cake Grid with Scroll Window --- */
 .cake-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     margin-top: 30px;
+    
+    /* The "Window" Logic */
+    max-height: 500px;       /* Adjust this height to show exactly 3 rows */
+    overflow-y: auto;        /* Enables vertical scrolling */
+    padding-right: 15px;     /* Space for the scrollbar */
+    padding-bottom: 20px;    /* Extra breathing room at the bottom */
+}
+
+/* Custom Scrollbar for Chrome, Safari, and Edge */
+.cake-grid::-webkit-scrollbar {
+    width: 6px;
+}
+
+.cake-grid::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.cake-grid::-webkit-scrollbar-thumb {
+    background: var(--accent-color); 
+    border-radius: 10px;
+}
+
+/* For Firefox */
+.cake-grid {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-color) #f1f1f1;
 }
 
 .cake-item {
@@ -370,6 +401,8 @@ nav {
 
 .social-icons img {
     width: 35px;
+    height: 35px;
+    object-fit: contain;
     cursor: pointer;
 }
 
