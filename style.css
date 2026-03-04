@@ -473,3 +473,36 @@ nav {
         height: 25px;
     }
 }
+
+/* Container to stack images on top of each other */
+.wechat-hover-container {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+
+/* Ensure both images fill the container */
+.wechat-hover-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+/* Hide the hover image by default */
+.wechat-hover-container .hover-img {
+    opacity: 0;
+}
+
+/* Show the hover image and hide the default image on hover */
+.wechat-hover-container:hover .hover-img {
+    opacity: 1;
+}
+
+.wechat-hover-container:hover .default-img {
+    opacity: 0;
+}
