@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>1NY Cafe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,40 +16,59 @@
                 <a href="#hero"><img src="resources/logo.jpg" alt="1NY Logo"></a>
             </div>
             <ul class="nav-links">
-                <li><a href="#contact-info">About us</a></li>
-                <li><a href="#pastry-menu">Bread/Desserts</a></li>
-                <li><a href="#bubble-tea-menu">Tea</a></li>
-                <li><a href="#appetizer-menu">Appetizer/Rice Burrito</a></li>
-                <li><a href="#custom-cake-menu">Custom Cake</a></li>
+                <li><a href="#contact-info">
+                    <span class="en">About US</span>
+                    <span class="ko">소개</span>
+                </a></li>
+                <li><a href="#pastry-menu">
+                    <span class="en">Bread/Desserts</span>
+                    <span class="ko">빵 / 디저트</span>
+                </a></li>
+                <li><a href="#bubble-tea-menu">
+                    <span class="en">Tea</span>
+                    <span class="ko">티 / 음료</span> </a></li>
+                <li><a href="#appetizer-menu">
+                    <span class="en">Appetizer/Rice Burrito</span>
+                    <span class="ko">에피타이저 / 밥 브리또</span>
+                </a></li>
+                <li><a href="#custom-cake-menu">
+                    <span class="en">Custom Cake</span>
+                    <span class="ko">주문제작 케이크</span> </a></li>
             </ul>
+            <button id="lang-btn" class="lang-btn">한국어</button>
         </nav>
     </header>
 
     <section class="hero" id="hero">
         <div class="hero-content">
-            <h1><span class="short-number">1</span>NY Cafe</h1>
+            <h1>1NY Cafe</h1>
             <p class="tagline">Your Daily Dose of Delight</p>
             
             <div class="categories">
                 <div class="category-item">
                     <a href="#pastry-menu"><img src="resources/Bread_home.png" alt="Bread"></a>
-                    <span>Bread</span>
+                    <span class="en">Bread</span>
+                    <span class="ko">빵</span>
                 </div>
                 <div class="category-item">
                     <a href="#pastry-menu"><img src="resources/pastry_home.png" alt="Desserts"></a>
-                    <span>Desserts</span>
+                    <span class="en">Desserts</span>
+                    <span class="ko">디저트</span>
                 </div>
                 <div class="category-item">
                     <a href="#bubble-tea-menu"><img src="resources/tea_home.png" alt="Bubble Tea"></a>
-                    <span>Bubble Tea</span>
+                    <span class="en">Bubble Tea</span>
+                    <span class="ko">버블티</span>
                 </div>
                 <div class="category-item">
                     <a href="#appetizer-menu"><img src="resources/App_home.png" alt="Appetizer"></a>
-                    <span>Appetizer/Rice Burrito</span>
+                    <span class="en">Appetizer/Rice Burrito</span>
+                    <span class="ko">에피타이저 / 밥 브리또</span>
                 </div>
                 <div class="category-item">
                     <a href="#custom-cake-menu"><img src="resources/cake_home.png" alt="Custom Cake"></a>
-                    <span>Custom Cake</span>
+                    <span class="en">Custom Cake</span>
+                    <span class="ko">주문제작 케이크</span>
                 </div>
             </div>
         </div>
@@ -60,10 +81,18 @@
     </section>
 
     <div class="divider"></div>
+
+            
     <section class="restaurant-menu" id="pastry-menu">
         <div class="menu-header">
-            <h1 class="main-menu-title">Bread</h1>
-            <p class="menu-subtitle">Handcrafted with love, daily.</p>
+            <h1 class="main-menu-title">
+                <span class="en">Bread</span>
+                <span class="ko">빵</span>
+            </h1>
+            <p class="menu-subtitle">
+                <span class="en">Handcrafted with love, daily.</span>
+                <span class="ko">매일 정성을 담아 구워냅니다.</span>
+            </p>
         </div>
 
         <div class="menu-grid-3">
@@ -73,45 +102,123 @@
                     <img src="resources/Japanese_Bread.png" alt="Pineapple Bun">
                 </div>
                 <div class="side-content">
-                    <h2 class="category-title">Soft Bread</h2>
+                    <h2 class="category-title">
+                        <span class="en">Soft Bread</span>
+                        <span class="ko">소프트 브레드</span>
+                    </h2>
                     <ul class="item-list">
-                        <li>Cocoa Souffle</li>
-                        <li>Coffee Butter Bread</li>
-                        <li>Cream Cheese Bread</li>
-                        <li>Crunchy Nut Brioche</li>
-                        <li>Garlic Cream Cheese Bread</li>
-                        <li>Honey Red Bean&Mochi Bread</li>
-                        <li>Japanese Salty Butter Bread</li>
-                        <li>Milk Bread (half loaf 5 slices)</li>
-                        <li>Pineapple Bun</li>
-                        <li>Pork Floss Bread</li>
-                        <li>Purple Rice&Mochi Bread</li>
-                        <li>Salted Egg Custard Bread</li>
-                        <li>Sausage & Cheese Bread</li>
-                        <li>Spicy Pork Floss Bread</li>
-                        <li>Taro Bread (half loaf)</li>
+                        <li>
+                            <span class="en">Cocoa Souffle</span>
+                            <span class="ko">코코아 수플레</span>
+                        </li>
+                        <li>
+                            <span class="en">Coffee Butter Bread</span>
+                            <span class="ko">커피 버터 브레드</span>
+                        </li>
+                        <li>
+                            <span class="en">Cream Cheese Bread</span>
+                            <span class="ko">크림치즈 브레드</span>
+                        </li>
+                        <li>
+                            <span class="en">Crunchy Nut Brioche</span>
+                            <span class="ko">크런치 넛 브리오슈</span>
+                        </li>
+                        <li>
+                            <span class="en">Garlic Cream Cheese Bread</span>
+                            <span class="ko">갈릭 크림치즈 브레드</span>
+                        </li>
+                        <li>
+                            <span class="en">Honey Red Bean&Mochi Bread</span>
+                            <span class="ko">꿀 팥 & 모찌 브레드</span>
+                        </li>
+                        <li>
+                            <span class="en">Japanese Salty Butter Bread</span>
+                            <span class="ko">일본식 소금 버터빵 (시오빵)</span>
+                        </li>
+                        <li>
+                            <span class="en">Milk Bread (half loaf 5 slices)</span>
+                            <span class="ko">우유 식빵 (하프 5조각)</span>
+                        </li>
+                        <li>
+                            <span class="en">Pineapple Bun</span>
+                            <span class="ko">파인애플 번</span>
+                        </li>
+                        <li>
+                            <span class="en">Pork Floss Bread</span>
+                            <span class="ko">포크 플로스 브레드</span>
+                        </li>
+                        <li>
+                            <span class="en">Purple Rice&Mochi Bread</span>
+                            <span class="ko">자색 고구마 모찌 브레드</span>
+                        </li>
+                        <li>
+                            <span class="en">Salted Egg Custard Bread</span>
+                            <span class="ko">솔티드 에그 커스터드 브레드</span>
+                        </li>
+                        <li>
+                            <span class="en">Sausage & Cheese Bread</span>
+                            <span class="ko">소시지 & 치즈 브레드</span>
+                        </li>
+                        <li>
+                            <span class="en">Spicy Pork Floss Bread</span>
+                            <span class="ko">스파이시 포크 플로스 브레드</span>
+                        </li>
+                        <li>
+                            <span class="en">Taro Bread (half loaf)</span>
+                            <span class="ko">타로 브레드 (하프)</span>
+                        </li>
                     </ul>
                 </div>
             </div>
 
 
 
-            <div class="menu-category-item">
+    <div class="menu-category-item">
                 <div class="side-image">
                     <img src="resources/Pretzel.png" alt="Matcha & Yuzu Cream Cheese Pretzels">
                 </div>
                 <div class="side-content">
-                    <h2 class="category-title">Pretzels</h2>
+                    <h2 class="category-title">
+                        <span class="en">Pretzels</span>
+                        <span class="ko">프레즐</span>
+                    </h2>
                     <ul class="item-list">
-                        <li>Black Sesame Pretzel</li>
-                        <li>Blueberry Cream Cheese Pretzel</li>
-                        <li>Chocolate Pretzel</li>
-                        <li>Matcha & Yuzu Cream Cheese Pretzel</li>
-                        <li>Matcha Pretzel</li>
-                        <li>New Orleans Chicken Pretzel</li>
-                        <li>Pandan & Mango Cream Cheese Pretzel</li>
-                        <li>Pistachio Cream Cheese Pretzel</li>
-                        <li>Tomato&Spicy Pork Floss Pretzel</li>
+                        <li>
+                            <span class="en">Black Sesame Pretzel</span>
+                            <span class="ko">흑임자 프레즐</span>
+                        </li>
+                        <li>
+                            <span class="en">Blueberry Cream Cheese Pretzel</span>
+                            <span class="ko">블루베리 크림치즈 프레즐</span>
+                        </li>
+                        <li>
+                            <span class="en">Chocolate Pretzel</span>
+                            <span class="ko">초콜릿 프레즐</span>
+                        </li>
+                        <li>
+                            <span class="en">Matcha & Yuzu Cream Cheese Pretzel</span>
+                            <span class="ko">말차 & 유자 크림치즈 프레즐</span>
+                        </li>
+                        <li>
+                            <span class="en">Matcha Pretzel</span>
+                            <span class="ko">말차 프레즐</span>
+                        </li>
+                        <li>
+                            <span class="en">New Orleans Chicken Pretzel</span>
+                            <span class="ko">뉴올리언스 치킨 프레즐</span>
+                        </li>
+                        <li>
+                            <span class="en">Pandan & Mango Cream Cheese Pretzel</span>
+                            <span class="ko">판단 & 망고 크림치즈 프레즐</span>
+                        </li>
+                        <li>
+                            <span class="en">Pistachio Cream Cheese Pretzel</span>
+                            <span class="ko">피스타치오 크림치즈 프레즐</span>
+                        </li>
+                        <li>
+                            <span class="en">Tomato&Spicy Pork Floss Pretzel</span>
+                            <span class="ko">토마토 & 스파이시 포크 플로스 프레즐</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -121,26 +228,45 @@
                     <img src="resources/Mochi_Cake.png" alt="Coffee Chocolate Lava Mochi Cake">
                 </div>
                 <div class="side-content">
-                    <h2 class="category-title">Mochi Cake</h2>
+                    <h2 class="category-title">
+                        <span class="en">Mochi Cake</span>
+                        <span class="ko">모찌 케이크</span>
+                    </h2>
                     <ul class="item-list">
-                        <li>Black Tea Buttery Baked Mochi Cake</li>
-                        <li>Buttery Baked Mochi Cake</li>
-                        <li>Coffee Chocolate Lava Mochi Cake</li>
-                        <li>Osmanthus Sweet Rice Wine Mochi Cake</li>
+                        <li>
+                            <span class="en">Black Tea Buttery Baked Mochi Cake</span>
+                            <span class="ko">홍차 버터 모찌 케이크</span>
+                        </li>
+                        <li>
+                            <span class="en">Buttery Baked Mochi Cake</span>
+                            <span class="ko">버터 모찌 케이크</span>
+                        </li>
+                        <li>
+                            <span class="en">Coffee Chocolate Lava Mochi Cake</span>
+                            <span class="ko">커피 초콜릿 라바 모찌 케이크</span>
+                        </li>
+                        <li>
+                            <span class="en">Osmanthus Sweet Rice Wine Mochi Cake</span>
+                            <span class="ko">오스만투스 감주 모찌 케이크</span>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <div class="divider"></div>
 
-
-<div class="divider"></div>
-
-    <section class="restaurant-menu" id="appetizer-menu">
+    <section class="restaurant-menu" id="dessert-menu">
         <div class="menu-header">
-            <h1 class="main-menu-title">Desserts</h1>
-            <p class="menu-subtitle">Your Sweet Tooth Awaits</p>
+            <h1 class="main-menu-title">
+                <span class="en">Desserts</span>
+                <span class="ko">디저트</span>
+            </h1>
+            <p class="menu-subtitle">
+                <span class="en">Your Sweet Tooth Awaits</span>
+                <span class="ko">달콤함이 당신을 기다립니다</span>
+            </p>
         </div>
 
         <div class="menu-grid-3">
@@ -150,16 +276,43 @@
                     <img src="resources/Rose_Lychee_Scone.png" alt="Rose Lychee Cream Cheese Scones">
                 </div>
                 <div class="side-content">
-                    <h2 class="category-title">Cream Cheese Scones</h2>
+                    <h2 class="category-title">
+                        <span class="en">Cream Cheese Scones</span>
+                        <span class="ko">크림치즈 스콘</span>
+                    </h2>
                     <ul class="item-list">
-                        <li>Butterfly Pea Flower Strawberry Cream Cheese Scone</li>
-                        <li>Charcoal Pistachio Cream Cheese Scone</li>
-                        <li>Cocoa Oreo Cream Cheese Scone</li>
-                        <li>Earl Grey Nutella Cream Cheese Scone</li>
-                        <li>Osmanthus Sweet Fermented Rice Cream Cheese Scone</li>
-                        <li>Pumpkin Meat Floss Cream Cheese Scone</li>
-                        <li>Purple Yam Blueberry Cream Cheese Scone</li>
-                        <li>Rose Lychee Cream Cheese Scone</li>   
+                        <li>
+                            <span class="en">Butterfly Pea Flower Strawberry Cream Cheese Scone</span>
+                            <span class="ko">버터플라이 피 딸기 크림치즈 스콘</span>
+                        </li>
+                        <li>
+                            <span class="en">Charcoal Pistachio Cream Cheese Scone</span>
+                            <span class="ko">차콜 피스타치오 크림치즈 스콘</span>
+                        </li>
+                        <li>
+                            <span class="en">Cocoa Oreo Cream Cheese Scone</span>
+                            <span class="ko">코코아 오레오 크림치즈 스콘</span>
+                        </li>
+                        <li>
+                            <span class="en">Earl Grey Nutella Cream Cheese Scone</span>
+                            <span class="ko">얼그레이 누텔라 크림치즈 스콘</span>
+                        </li>
+                        <li>
+                            <span class="en">Osmanthus Sweet Fermented Rice Cream Cheese Scone</span>
+                            <span class="ko">오스만투스 감주 크림치즈 스콘</span>
+                        </li>
+                        <li>
+                            <span class="en">Pumpkin Meat Floss Cream Cheese Scone</span>
+                            <span class="ko">호박 포크 플로스 크림치즈 스콘</span>
+                        </li>
+                        <li>
+                            <span class="en">Purple Yam Blueberry Cream Cheese Scone</span>
+                            <span class="ko">자색 고구마 블루베리 크림치즈 스콘</span>
+                        </li>
+                        <li>
+                            <span class="en">Rose Lychee Cream Cheese Scone</span>
+                            <span class="ko">로즈 리치 크림치즈 스콘</span>
+                        </li>   
                     </ul>
                 </div>
             </div>
@@ -169,31 +322,73 @@
                     <img src="resources/Cake_box.png" alt="Black Tea Boba Cake Box">
                 </div>
                 <div class="side-content">
-                    <h2 class="category-title">Cake Boxes</h2>
+                    <h2 class="category-title">
+                        <span class="en">Cake Boxes</span>
+                        <span class="ko">케이크 박스</span>
+                    </h2>
                     <ul class="item-list">
-                        <li>Black Tea Boba Cake Box</li>
-                        <li>Oreo Cake Box</li>
-                        <li>Salted Caramel Cake Box</li>
-                        <li>Soybean Cake Box</li>
-                        <li>Taro Cake Box</li>
-                        <li>Tiramisu Cake Box</li>
+                        <li>
+                            <span class="en">Black Tea Boba Cake Box</span>
+                            <span class="ko">홍차 버블 케이크 박스</span>
+                        </li>
+                        <li>
+                            <span class="en">Oreo Cake Box</span>
+                            <span class="ko">오레오 케이크 박스</span>
+                        </li>
+                        <li>
+                            <span class="en">Salted Caramel Cake Box</span>
+                            <span class="ko">솔티드 카라멜 케이크 박스</span>
+                        </li>
+                        <li>
+                            <span class="en">Soybean Cake Box</span>
+                            <span class="ko">인절미(콩가루) 케이크 박스</span>
+                        </li>
+                        <li>
+                            <span class="en">Taro Cake Box</span>
+                            <span class="ko">타로 케이크 박스</span>
+                        </li>
+                        <li>
+                            <span class="en">Tiramisu Cake Box</span>
+                            <span class="ko">티라미수 케이크 박스</span>
+                        </li>
                     </ul>
                 </div>
             </div>
 
             <div class="menu-category-item">
                 <div class="side-image">
-                    <img src="resources/Cake_box.png" alt="Black Tea Boba Cake Box">
+                    <img src="resources/Cake_box.png" alt="Desserts">
                 </div>
                 <div class="side-content">
-                    <h2 class="category-title">Desserts</h2>
+                    <h2 class="category-title">
+                        <span class="en">Desserts</span>
+                        <span class="ko">디저트</span>
+                    </h2>
                     <ul class="item-list">
-                        <li>Cream-Filled Tiger Skin Cake Roll</li>
-                        <li>Creamy Mochi Bread</li>
-                        <li>Egg Tart</li>
-                        <li>Pork Floss Cake</li>
-                        <li>Puff Pastry</li>
-                        <li>Sesame Mochi Bread</li>
+                        <li>
+                            <span class="en">Cream-Filled Tiger Skin Cake Roll</span>
+                            <span class="ko">크림 타이거 스킨 롤 케이크</span>
+                        </li>
+                        <li>
+                            <span class="en">Creamy Mochi Bread</span>
+                            <span class="ko">크림 모찌 브레드</span>
+                        </li>
+                        <li>
+                            <span class="en">Egg Tart</span>
+                            <span class="ko">에그 타르트</span>
+                        </li>
+                        <li>
+                            <span class="en">Pork Floss Cake</span>
+                            <span class="ko">포크 플로스 케이크</span>
+                        </li>
+                        <li>
+                            <span class="en">Puff Pastry</span>
+                            <span class="ko">퍼프 패스트리</span>
+                        </li>
+                        <li>
+                            <span class="en">Sesame Mochi Bread</span>
+                            <span class="ko">참깨 모찌 브레드</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -201,12 +396,18 @@
         </div>
     </section>
 
-<div class="divider"></div>
+    <div class="divider"></div>
 
     <section class="restaurant-menu" id="bubble-tea-menu">
         <div class="menu-header">
-            <h1 class="main-menu-title">Bubble Tea</h1>
-            <p class="menu-subtitle">Sip, smile, repeat.</p>
+            <h1 class="main-menu-title">
+                <span class="en">Bubble Tea</span>
+                <span class="ko">버블티</span>
+            </h1>
+            <p class="menu-subtitle">
+                <span class="en">Sip, smile, repeat.</span>
+                <span class="ko">마시고, 웃고, 다시 즐기세요.</span>
+            </p>
         </div>
 
         <div class="menu-grid-3">
@@ -216,18 +417,21 @@
                     <img src="resources/classic_milk_tea.png" alt="Classic Milk Tea">
                 </div>
                 <div class="side-content">
-                    <h2 class="category-title">Classic Milk Tea</h2>
+                    <h2 class="category-title">
+                        <span class="en">Classic Milk Tea</span>
+                        <span class="ko">클래식 밀크티</span>
+                    </h2>
                     <ul class="item-list">
-                        <li>Classic Milk Tea</li>
-                        <li>Dark Roasted Oolong Milk Tea</li>
-                        <li>Milk Tea with Honey Red Bean</li>
-                        <li>White Peach Oolong Milk Tea</li>
-                        <li>Assam Milk Tea with Caramel</li>
-                        <li>Assam Milk Tea with Oreo</li>
-                        <li>Japanese Genmaicha Milk Tea with Purple Rice</li>
-                        <li>Classic Taro Milk Tea</li>
-                        <li>Classic Honeydew Milk Tea</li>
-                        <li>Classic Thai Milk Tea</li>
+                        <li><span class="en">Classic Milk Tea</span><span class="ko">클래식 밀크티</span></li>
+                        <li><span class="en">Dark Roasted Oolong Milk Tea</span><span class="ko">로스티드 우롱 밀크티</span></li>
+                        <li><span class="en">Milk Tea with Honey Red Bean</span><span class="ko">꿀 팥 밀크티</span></li>
+                        <li><span class="en">White Peach Oolong Milk Tea</span><span class="ko">백도 우롱 밀크티</span></li>
+                        <li><span class="en">Assam Milk Tea with Caramel</span><span class="ko">아쌈 카라멜 밀크티</span></li>
+                        <li><span class="en">Assam Milk Tea with Oreo</span><span class="ko">아쌈 오레오 밀크티</span></li>
+                        <li><span class="en">Japanese Genmaicha Milk Tea with Purple Rice</span><span class="ko">현미 흑미 밀크티</span></li>
+                        <li><span class="en">Classic Taro Milk Tea</span><span class="ko">클래식 타로 밀크티</span></li>
+                        <li><span class="en">Classic Honeydew Milk Tea</span><span class="ko">클래식 허니듀 밀크티</span></li>
+                        <li><span class="en">Classic Thai Milk Tea</span><span class="ko">클래식 타이 밀크티</span></li>
                     </ul>
                 </div>
             </div>
@@ -237,19 +441,22 @@
                     <img src="resources/fruit_tea.png" alt="Fresh Fruit Tea">
                 </div>
                 <div class="side-content">
-                    <h2 class="category-title">Fresh Fruit Tea</h2>
+                    <h2 class="category-title">
+                        <span class="en">Fresh Fruit Tea</span>
+                        <span class="ko">생과일 티</span>
+                    </h2>
                     <ul class="item-list">
-                        <li>Passionfruit Green Tea</li>
-                        <li>Kumquat with Lemon</li>
-                        <li>Grapefruit Green Tea</li>
-                        <li>Lychee with Jelly</li>
-                        <li>Grape Green Tea with Aloe Chunks</li>
-                        <li>Peach Green Tea</li>
-                        <li>Mango Green Tea</li>
-                        <li>Strawberry Green Tea</li>
-                        <li>Blueberry Green Tea</li>
-                        <li>Guava Green Tea</li>
-                        <li>Green Apple Green Tea</li>
+                        <li><span class="en">Passionfruit Green Tea</span><span class="ko">패션후르츠 그린티</span></li>
+                        <li><span class="en">Kumquat with Lemon</span><span class="ko">금귤 레몬티</span></li>
+                        <li><span class="en">Grapefruit Green Tea</span><span class="ko">자몽 그린티</span></li>
+                        <li><span class="en">Lychee with Jelly</span><span class="ko">리치 젤리 티</span></li>
+                        <li><span class="en">Grape Green Tea with Aloe Chunks</span><span class="ko">청포도 알로에 그린티</span></li>
+                        <li><span class="en">Peach Green Tea</span><span class="ko">복숭아 그린티</span></li>
+                        <li><span class="en">Mango Green Tea</span><span class="ko">망고 그린티</span></li>
+                        <li><span class="en">Strawberry Green Tea</span><span class="ko">딸기 그린티</span></li>
+                        <li><span class="en">Blueberry Green Tea</span><span class="ko">블루베리 그린티</span></li>
+                        <li><span class="en">Guava Green Tea</span><span class="ko">구아바 그린티</span></li>
+                        <li><span class="en">Green Apple Green Tea</span><span class="ko">청사과 그린티</span></li>
                     </ul>
                 </div>
             </div>
@@ -259,14 +466,17 @@
                     <img src="resources/tea_latte.png" alt="Tea Latte">
                 </div>
                 <div class="side-content">
-                    <h2 class="category-title">Tea Latte</h2>
+                    <h2 class="category-title">
+                        <span class="en">Tea Latte</span>
+                        <span class="ko">티 라떼</span>
+                    </h2>
                     <ul class="item-list">
-                        <li>Four Season Latte</li>
-                        <li>Jasmine Green Tea Latte</li>
-                        <li>Black Tea Latte</li>
-                        <li>Black Tea Latte with Taro & Boba</li>
-                        <li>Dark Roasted Oolong Tea Latte</li>
-                        <li>White Peach Oolong Tea Latte</li>
+                        <li><span class="en">Four Season Latte</span><span class="ko">사계춘 라떼</span></li>
+                        <li><span class="en">Jasmine Green Tea Latte</span><span class="ko">자스민 그린티 라떼</span></li>
+                        <li><span class="en">Black Tea Latte</span><span class="ko">블랙티 라떼</span></li>
+                        <li><span class="en">Black Tea Latte with Taro & Boba</span><span class="ko">타로 버블 블랙티 라떼</span></li>
+                        <li><span class="en">Dark Roasted Oolong Tea Latte</span><span class="ko">우롱 티 라떼</span></li>
+                        <li><span class="en">White Peach Oolong Tea Latte</span><span class="ko">백도 우롱 티 라떼</span></li>
                     </ul>
                 </div>
             </div>
@@ -276,12 +486,15 @@
                     <img src="resources/fresh_milk.png" alt="Fresh Milk">
                 </div>
                 <div class="side-content">
-                    <h2 class="category-title">Fresh Milk</h2>
+                    <h2 class="category-title">
+                        <span class="en">Fresh Milk</span>
+                        <span class="ko">우유 음료 (프레시 밀크)</span>
+                    </h2>
                     <ul class="item-list">
-                        <li>Strawberry Latte</li>
-                        <li>Mango Latte</li>
-                        <li>Taro Latte</li>
-                        <li>Brown Sugar Latte</li>
+                        <li><span class="en">Strawberry Latte</span><span class="ko">딸기 라떼</span></li>
+                        <li><span class="en">Mango Latte</span><span class="ko">망고 라떼</span></li>
+                        <li><span class="en">Taro Latte</span><span class="ko">타로 라떼</span></li>
+                        <li><span class="en">Brown Sugar Latte</span><span class="ko">흑당 라떼</span></li>
                     </ul>
                 </div>
             </div>
@@ -291,28 +504,33 @@
                     <img src="resources/dirty_tea.png" alt="Dirty Milk Tea">
                 </div>
                 <div class="side-content">
-                    <h2 class="category-title">Dirty Milk Tea</h2>
+                    <h2 class="category-title">
+                        <span class="en">Dirty Milk Tea</span>
+                        <span class="ko">더티 밀크티</span>
+                    </h2>
                     <ul class="item-list">
-                        <li>Classic Milk Tea with Bubbles</li>
-                        <li>Dark Roasted Oolong Milk Tea with Bubbles</li>
+                        <li><span class="en">Classic Milk Tea with Bubbles</span><span class="ko">버블 클래식 밀크티</span></li>
+                        <li><span class="en">Dark Roasted Oolong Milk Tea with Bubbles</span><span class="ko">버블 우롱 밀크티</span></li>
                     </ul>
                 </div>
             </div>
-
             
             <div class="menu-category-item">
                 <div class="side-image">
                     <img src="resources/winter_melon.png" alt="Winter Melon Tea">
                 </div>
                 <div class="side-content">
-                    <h2 class="category-title">Winter Melon Tea/Honey Bean Milk Slush</h2>
+                    <h2 class="category-title">
+                        <span class="en">Winter Melon Tea/Honey Bean Milk Slush</span>
+                        <span class="ko">윈터멜론 티 / 꿀 콩 밀크 슬러시</span>
+                    </h2>
                     <ul class="item-list">
-                        <li>Winter Melon Green Tea</li>
-                        <li>Fresh Milk Winter Melon Tea</li>
-                        <li>Winter Melon Green Tea Latte</li>
-                        <li>Mini Mochi Winter Melon Green Tea</li>
-                        <li>Honey Mung Bean Milk Slush</li>
-                        <li>Honey Red Bean Milk Slush</li>
+                        <li><span class="en">Winter Melon Green Tea</span><span class="ko">윈터 멜론 그린티</span></li>
+                        <li><span class="en">Fresh Milk Winter Melon Tea</span><span class="ko">프레시 밀크 윈터 멜론 티</span></li>
+                        <li><span class="en">Winter Melon Green Tea Latte</span><span class="ko">윈터 멜론 그린티 라떼</span></li>
+                        <li><span class="en">Mini Mochi Winter Melon Green Tea</span><span class="ko">미니 모찌 윈터 멜론 그린티</span></li>
+                        <li><span class="en">Honey Mung Bean Milk Slush</span><span class="ko">꿀 녹두 밀크 슬러시</span></li>
+                        <li><span class="en">Honey Red Bean Milk Slush</span><span class="ko">꿀 팥 밀크 슬러시</span></li>
                     </ul>
                 </div>
             </div>
@@ -322,15 +540,18 @@
                     <img src="resources/fresh_tea.png" alt="Fresh Tea">
                 </div>
                 <div class="side-content">
-                    <h2 class="category-title">Fresh Tea</h2>
+                    <h2 class="category-title">
+                        <span class="en">Fresh Tea</span>
+                        <span class="ko">프레시 티</span>
+                    </h2>
                     <ul class="item-list">
-                        <li>Classic Black Tea</li>
-                        <li>Four Season Green Tea</li>
-                        <li>Jasmine Green Tea</li> 
-                        <li>Dark Roasted Oolong Tea</li>
-                        <li>White Peach Oolong Tea</li>
-                        <li>Assam Black Tea</li>
-                        <li>Japanese Genmaicha Tea</li>
+                        <li><span class="en">Classic Black Tea</span><span class="ko">클래식 블랙티</span></li>
+                        <li><span class="en">Four Season Green Tea</span><span class="ko">사계춘 그린티</span></li>
+                        <li><span class="en">Jasmine Green Tea</span><span class="ko">자스민 그린티</span></li> 
+                        <li><span class="en">Dark Roasted Oolong Tea</span><span class="ko">로스티드 우롱티</span></li>
+                        <li><span class="en">White Peach Oolong Tea</span><span class="ko">백도 우롱티</span></li>
+                        <li><span class="en">Assam Black Tea</span><span class="ko">아쌈 블랙티</span></li>
+                        <li><span class="en">Japanese Genmaicha Tea</span><span class="ko">현미녹차</span></li>
                     </ul>
                 </div>
             </div>
@@ -340,12 +561,15 @@
                     <img src="resources/yogurt_slush.png" alt="Real Yogurt Slush">
                 </div>
                 <div class="side-content">
-                    <h2 class="category-title">Real Yogurt Slush</h2>
+                    <h2 class="category-title">
+                        <span class="en">Real Yogurt Slush</span>
+                        <span class="ko">리얼 요거트 슬러시</span>
+                    </h2>
                     <ul class="item-list">
-                        <li>Mango Yogurt Slush</li>
-                        <li>Strawberry Yogurt Slush</li>
-                        <li>Purple Rice Yogurt Slush</li>
-                        <li>Avocado Yogurt Slush</li>
+                        <li><span class="en">Mango Yogurt Slush</span><span class="ko">망고 요거트 슬러시</span></li>
+                        <li><span class="en">Strawberry Yogurt Slush</span><span class="ko">딸기 요거트 슬러시</span></li>
+                        <li><span class="en">Purple Rice Yogurt Slush</span><span class="ko">흑미 요거트 슬러시</span></li>
+                        <li><span class="en">Avocado Yogurt Slush</span><span class="ko">아보카도 요거트 슬러시</span></li>
                     </ul>
                 </div>
             </div>
@@ -355,11 +579,14 @@
                     <img src="resources/coconut_sago.png" alt="Coconut Juice with Sago">
                 </div>
                 <div class="side-content">
-                    <h2 class="category-title">Coconut Juice with Sago</h2>
+                    <h2 class="category-title">
+                        <span class="en">Coconut Juice with Sago</span>
+                        <span class="ko">사고 코코넛 주스</span>
+                    </h2>
                     <ul class="item-list">
-                        <li>Mango Coconut Juice with Sago</li>
-                        <li>Strawberry Coconut Juice with Sago</li>
-                        <li>Taro Coconut Juice with Sago</li>
+                        <li><span class="en">Mango Coconut Juice with Sago</span><span class="ko">망고 사고 코코넛 주스</span></li>
+                        <li><span class="en">Strawberry Coconut Juice with Sago</span><span class="ko">딸기 사고 코코넛 주스</span></li>
+                        <li><span class="en">Taro Coconut Juice with Sago</span><span class="ko">타로 사고 코코넛 주스</span></li>
                     </ul>
                 </div>
             </div>
@@ -370,8 +597,14 @@
     <div class="divider"></div>
     <section class="restaurant-menu" id="appetizer-menu">
         <div class="menu-header">
-            <h1 class="main-menu-title">Appetizers & Purple Rice Burritos</h1>
-            <p class="menu-subtitle">Try Our Savory Delight</p>
+            <h1 class="main-menu-title">
+                <span class="en">Appetizers & Purple Rice Burritos</span>
+                <span class="ko">에피타이저 & 흑미 브리또</span>
+            </h1>
+            <p class="menu-subtitle">
+                <span class="en">Try Our Savory Delight</span>
+                <span class="ko">짭짤하고 맛있는 즐거움을 맛보세요</span>
+            </p>
         </div>
 
         <div class="menu-grid-3">
@@ -381,15 +614,18 @@
                     <img src="resources/Chicken_wing.png" alt="Chicken Wing">
                 </div>
                 <div class="side-content">
-                    <h2 class="category-title">Appetizers</h2>
+                    <h2 class="category-title">
+                        <span class="en">Appetizers</span>
+                        <span class="ko">에피타이저</span>
+                    </h2>
                     <ul class="item-list">
-                        <li>Taiwanese Popcorn Chicken</li>
-                        <li>New Orleans Roast Wings</li>
-                        <li>Fried Chicken Wings</li>
-                        <li>Spicy Chicken Wings</li>
-                        <li>Salt and Pepper Squid Tentacles</li>
-                        <li>Spring Rolls</li>
-                        <li>Sesame Balls</li>
+                        <li><span class="en">Taiwanese Popcorn Chicken</span><span class="ko">대만식 팝콘 치킨</span></li>
+                        <li><span class="en">New Orleans Roast Wings</span><span class="ko">뉴올리언스 로스트 윙</span></li>
+                        <li><span class="en">Fried Chicken Wings</span><span class="ko">프라이드 치킨 윙</span></li>
+                        <li><span class="en">Spicy Chicken Wings</span><span class="ko">스파이시 치킨 윙</span></li>
+                        <li><span class="en">Salt and Pepper Squid Tentacles</span><span class="ko">오징어 다리 튀김</span></li>
+                        <li><span class="en">Spring Rolls</span><span class="ko">스프링 롤</span></li>
+                        <li><span class="en">Sesame Balls</span><span class="ko">참깨볼</span></li>
                     </ul>
                 </div>
             </div>
@@ -399,149 +635,251 @@
                     <img src="resources/Rice_Burritos.png" alt="Purple Rice Burritos">
                 </div>
                 <div class="side-content">
-                    <h2 class="category-title">Purple Rice Burritos</h2>
+                    <h2 class="category-title">
+                        <span class="en">Purple Rice Burritos</span>
+                        <span class="ko">흑미 브리또</span>
+                    </h2>
                     <ul class="item-list">
-                        <li>Purple Rice Burrito with Vegetable</li>
-                        <li>Purple Rice Burrito with Taiwanese Chicken</li>
-                        <li>Purple Rice Burrito with Taiwanese Sausage</li>
-                        <li>Purple Rice Burrito with Squid</li>
-                        <li>Purple Rice Burrito with Tempura Shrimp</li>
+                        <li><span class="en">Purple Rice Burrito with Vegetable</span><span class="ko">야채 흑미 브리또</span></li>
+                        <li><span class="en">Purple Rice Burrito with Taiwanese Chicken</span><span class="ko">대만식 치킨 흑미 브리또</span></li>
+                        <li><span class="en">Purple Rice Burrito with Taiwanese Sausage</span><span class="ko">대만식 소시지 흑미 브리또</span></li>
+                        <li><span class="en">Purple Rice Burrito with Squid</span><span class="ko">오징어 흑미 브리또</span></li>
+                        <li><span class="en">Purple Rice Burrito with Tempura Shrimp</span><span class="ko">새우 튀김 흑미 브리또</span></li>
                     </ul> 
                 </div> 
             </div>
 
         </div>
     </section>
-    <div class="divider"></div>
 
-<section class="order-section" id="custom-cake-menu">
+    <div class="divider"></div>
+    <section class="order-section" id="custom-cake-menu">
     <div class="menu-header">
-        <h1 class="main-menu-title">Custom Orders</h1>
-        <p class="menu-subtitle">Bring your dream cake to life</p>
+        <h1 class="main-menu-title">
+            <span class="en">Custom Orders</span>
+            <span class="ko">주문 제작</span>
+        </h1>
+        <p class="menu-subtitle">
+            <span class="en">Bring your dream cake to life</span>
+            <span class="ko">당신이 꿈꾸던 케이크를 만나보세요</span>
+        </p>
     </div>
 
     <div class="order-card">
         
         <div class="order-step">
-            <h2 class="step-title">Timeline</h2>
+            <h2 class="step-title">
+                <span class="en">Timeline</span>
+                <span class="ko">예약 안내</span>
+            </h2>
             <p class="step-text">
-                24 hour notice is needed before any Custom Cake order. You are welcome to select any of the pre-set style below or bring your own design. Please  
-                <a href="#contact-info" class="accent-link">contact us</a> for additional details.
+                <span class="en">24 hour notice is needed before any Custom Cake order. You are welcome to select any of the pre-set style below or bring your own design. Please <a href="#contact-info" class="accent-link">contact us</a> for additional details.</span>
+                <span class="ko">주문 제작 케이크는 최소 24시간 전에 예약해 주셔야 합니다. 아래의 디자인 중 하나를 선택하시거나, 원하시는 디자인을 직접 가져오셔도 좋습니다. 자세한 내용은 <a href="#contact-info" class="accent-link">문의해 주세요</a>.</span>
             </p>
         </div>
 
         <div class="order-step">
-            <h2 class="step-title"> Step I: Choose Your Cake Style</h2>
+            <h2 class="step-title">
+                <span class="en">Step I: Choose Your Cake Style</span>
+                <span class="ko">1단계: 케이크 디자인 선택</span>
+            </h2>
             <p class="step-text">
-                We can make 6 inch, 8 inch, 10 inch and 12 inch Cake in the following styles:
+                <span class="en">We can make 6 inch, 8 inch, 10 inch and 12 inch Cake in the following styles, organized by price tier:</span>
+                <span class="ko">6인치, 8인치, 10인치, 12인치 케이크 제작이 가능하며, 가격대별 디자인은 다음과 같습니다:</span>
             </p>
             
+            <h3 class="price-tier-title">6 inch/ 8 inch/ 10 inch/ 12 inch: $48/60/78/90</h3>
             <div class="cake-grid">
-                <div class="cake-item"><img src="resources/0095.jpg" alt="Style 0095"><p class="cake-code">#0095</p></div>
-                <div class="cake-item"><img src="resources/0145.jpg" alt="Style 0145"><p class="cake-code">#0145</p></div>
-                <div class="cake-item"><img src="resources/0454.jpg" alt="Style 0454"><p class="cake-code">#0454</p></div>
-                <div class="cake-item"><img src="resources/0653.jpg" alt="Style 0653"><p class="cake-code">#0653</p></div>
-                <div class="cake-item"><img src="resources/0665.jpg" alt="Style 0665"><p class="cake-code">#0665</p></div>
-                <div class="cake-item"><img src="resources/0728.jpg" alt="Style 0728"><p class="cake-code">#0728</p></div>
-                <div class="cake-item"><img src="resources/0802.jpg" alt="Style 0802"><p class="cake-code">#0802</p></div>
-                <div class="cake-item"><img src="resources/0803.jpg" alt="Style 0803"><p class="cake-code">#0803</p></div>
-                <div class="cake-item"><img src="resources/0992.jpg" alt="Style 0992"><p class="cake-code">#0992</p></div>
-                <div class="cake-item"><img src="resources/1120.jpg" alt="Style 1120"><p class="cake-code">#1120</p></div>
-                <div class="cake-item"><img src="resources/1142.jpg" alt="Style 1142"><p class="cake-code">#1142</p></div>
-                <div class="cake-item"><img src="resources/1239.jpg" alt="Style 1239"><p class="cake-code">#1239</p></div>
-                <div class="cake-item"><img src="resources/1297.jpg" alt="Style 1297"><p class="cake-code">#1297</p></div>
-                <div class="cake-item"><img src="resources/1406.jpg" alt="Style 1406"><p class="cake-code">#1406</p></div>
-                <div class="cake-item"><img src="resources/1504.jpg" alt="Style 1504"><p class="cake-code">#1504</p></div>
-                <div class="cake-item"><img src="resources/1571.jpg" alt="Style 1571"><p class="cake-code">#1571</p></div>
-                <div class="cake-item"><img src="resources/1587.jpg" alt="Style 1587"><p class="cake-code">#1587</p></div>
-                <div class="cake-item"><img src="resources/1668.jpg" alt="Style 1668"><p class="cake-code">#1668</p></div>
-                <div class="cake-item"><img src="resources/1816.jpg" alt="Style 1816"><p class="cake-code">#1816</p></div>
-                <div class="cake-item"><img src="resources/1818.jpg" alt="Style 1818"><p class="cake-code">#1818</p></div>
-                <div class="cake-item"><img src="resources/1989.jpg" alt="Style 1989"><p class="cake-code">#1989</p></div>
-                <div class="cake-item"><img src="resources/2031.jpg" alt="Style 2031"><p class="cake-code">#2031</p></div>
-                <div class="cake-item"><img src="resources/2049.jpg" alt="Style 2049"><p class="cake-code">#2049</p></div>
-                <div class="cake-item"><img src="resources/2186.jpg" alt="Style 2186"><p class="cake-code">#2186</p></div>
-                <div class="cake-item"><img src="resources/2221.jpg" alt="Style 2221"><p class="cake-code">#2221</p></div>
-                <div class="cake-item"><img src="resources/2325.jpg" alt="Style 2325"><p class="cake-code">#2325</p></div>
-                <div class="cake-item"><img src="resources/2436.jpg" alt="Style 2436"><p class="cake-code">#2436</p></div>
-                <div class="cake-item"><img src="resources/2750.jpg" alt="Style 2750"><p class="cake-code">#2750</p></div>
-                <div class="cake-item"><img src="resources/2771.jpg" alt="Style 2771"><p class="cake-code">#2771</p></div>
-                <div class="cake-item"><img src="resources/2831.jpg" alt="Style 2831"><p class="cake-code">#2831</p></div>
-                <div class="cake-item"><img src="resources/2832.jpg" alt="Style 2832"><p class="cake-code">#2832</p></div>
-                <div class="cake-item"><img src="resources/2870.jpg" alt="Style 2870"><p class="cake-code">#2870</p></div>
-                <div class="cake-item"><img src="resources/2903.jpg" alt="Style 2903"><p class="cake-code">#2903</p></div>
                 <div class="cake-item"><img src="resources/3040.jpg" alt="Style 3040"><p class="cake-code">#3040</p></div>
-                <div class="cake-item"><img src="resources/3383.jpg" alt="Style 3383"><p class="cake-code">#3383</p></div>
-                <div class="cake-item"><img src="resources/3739.jpg" alt="Style 3739"><p class="cake-code">#3739</p></div>
-                <div class="cake-item"><img src="resources/3972.jpg" alt="Style 3972"><p class="cake-code">#3972</p></div>
-                <div class="cake-item"><img src="resources/4025.jpg" alt="Style 4025"><p class="cake-code">#4025</p></div>
-                <div class="cake-item"><img src="resources/4033.jpg" alt="Style 4033"><p class="cake-code">#4033</p></div>
-                <div class="cake-item"><img src="resources/4102.jpg" alt="Style 4102"><p class="cake-code">#4102</p></div>
-                <div class="cake-item"><img src="resources/4300.jpg" alt="Style 4300"><p class="cake-code">#4300</p></div>
-                <div class="cake-item"><img src="resources/5072.jpg" alt="Style 5072"><p class="cake-code">#5072</p></div>
-                <div class="cake-item"><img src="resources/5165.jpg" alt="Style 5165"><p class="cake-code">#5165</p></div>
-                <div class="cake-item"><img src="resources/5364.jpg" alt="Style 5364"><p class="cake-code">#5364</p></div>
-                <div class="cake-item"><img src="resources/5691.jpg" alt="Style 5691"><p class="cake-code">#5691</p></div>
-                <div class="cake-item"><img src="resources/5797.jpg" alt="Style 5797"><p class="cake-code">#5797</p></div>
-                <div class="cake-item"><img src="resources/5828.jpg" alt="Style 5828"><p class="cake-code">#5828</p></div>
-                <div class="cake-item"><img src="resources/5846.jpg" alt="Style 5846"><p class="cake-code">#5846</p></div>
-                <div class="cake-item"><img src="resources/5938.jpg" alt="Style 5938"><p class="cake-code">#5938</p></div>
-                <div class="cake-item"><img src="resources/6429.jpg" alt="Style 6429"><p class="cake-code">#6429</p></div>
-                <div class="cake-item"><img src="resources/6679.jpg" alt="Style 6679"><p class="cake-code">#6679</p></div>
-                <div class="cake-item"><img src="resources/6711.jpg" alt="Style 6711"><p class="cake-code">#6711</p></div>
-                <div class="cake-item"><img src="resources/6742.jpg" alt="Style 6742"><p class="cake-code">#6742</p></div>
-                <div class="cake-item"><img src="resources/6745.jpg" alt="Style 6745"><p class="cake-code">#6745</p></div>
-                <div class="cake-item"><img src="resources/7168.jpg" alt="Style 7168"><p class="cake-code">#7168</p></div>
-                <div class="cake-item"><img src="resources/7232.jpg" alt="Style 7232"><p class="cake-code">#7232</p></div>
-                <div class="cake-item"><img src="resources/7466.jpg" alt="Style 7466"><p class="cake-code">#7466</p></div>
-                <div class="cake-item"><img src="resources/7504.jpg" alt="Style 7504"><p class="cake-code">#7504</p></div>
-                <div class="cake-item"><img src="resources/7505.jpg" alt="Style 7505"><p class="cake-code">#7505</p></div>
-                <div class="cake-item"><img src="resources/7743.jpg" alt="Style 7743"><p class="cake-code">#7743</p></div>
-                <div class="cake-item"><img src="resources/7880.jpg" alt="Style 7880"><p class="cake-code">#7880</p></div>
-                <div class="cake-item"><img src="resources/7952.jpg" alt="Style 7952"><p class="cake-code">#7952</p></div>
-                <div class="cake-item"><img src="resources/8105.jpg" alt="Style 8105"><p class="cake-code">#8105</p></div>
-                <div class="cake-item"><img src="resources/8130.jpg" alt="Style 8130"><p class="cake-code">#8130</p></div>
-                <div class="cake-item"><img src="resources/8232.jpg" alt="Style 8232"><p class="cake-code">#8232</p></div>
-                <div class="cake-item"><img src="resources/8267.jpg" alt="Style 8267"><p class="cake-code">#8267</p></div>
-                <div class="cake-item"><img src="resources/8290.jpg" alt="Style 8290"><p class="cake-code">#8290</p></div>
-                <div class="cake-item"><img src="resources/8319.jpg" alt="Style 8319"><p class="cake-code">#8319</p></div>
-                <div class="cake-item"><img src="resources/8415.jpg" alt="Style 8415"><p class="cake-code">#8415</p></div>
-                <div class="cake-item"><img src="resources/8511.jpg" alt="Style 8511"><p class="cake-code">#8511</p></div>
-                <div class="cake-item"><img src="resources/8842.jpg" alt="Style 8842"><p class="cake-code">#8842</p></div>
-                <div class="cake-item"><img src="resources/8874.jpg" alt="Style 8874"><p class="cake-code">#8874</p></div>
-                <div class="cake-item"><img src="resources/9221.jpg" alt="Style 9221"><p class="cake-code">#9221</p></div>
-                <div class="cake-item"><img src="resources/9257.jpg" alt="Style 9257"><p class="cake-code">#9257</p></div>
-                <div class="cake-item"><img src="resources/9327.jpg" alt="Style 9327"><p class="cake-code">#9327</p></div>
-                <div class="cake-item"><img src="resources/9361.jpg" alt="Style 9361"><p class="cake-code">#9361</p></div>
-                <div class="cake-item"><img src="resources/9543.jpg" alt="Style 9543"><p class="cake-code">#9543</p></div>
                 <div class="cake-item"><img src="resources/9601.jpg" alt="Style 9601"><p class="cake-code">#9601</p></div>
             </div>
-        </div>
 
-        <div class="order-step">
-            <h2 class="step-title">Step II: Pick Your fillings</h2>
+            <h3 class="price-tier-title">6 inch/ 8 inch/ 10 inch/ 12 inch: $53/65/83/95</h3>
+            <div class="cake-grid">
+                <div class="cake-item"><img src="resources/7505.jpg" alt="Style 7505"><p class="cake-code">#7505</p></div>
+                <div class="cake-item"><img src="resources/6745.jpg" alt="Style 6745"><p class="cake-code">#6745</p></div>
+                <div class="cake-item"><img src="resources/1587.jpg" alt="Style 1587"><p class="cake-code">#1587</p></div>
+                <div class="cake-item"><img src="resources/8874.jpg" alt="Style 8874"><p class="cake-code">#8874</p></div>
+                <div class="cake-item"><img src="resources/2750.jpg" alt="Style 2750"><p class="cake-code">#2750</p></div>
+                <div class="cake-item"><img src="resources/5691.jpg" alt="Style 5691"><p class="cake-code">#5691</p></div>
+                <div class="cake-item"><img src="resources/4025.jpg" alt="Style 4025"><p class="cake-code">#4025</p></div>
+                <div class="cake-item"><img src="resources/2870.jpg" alt="Style 2870"><p class="cake-code">#2870</p></div>
+                <div class="cake-item"><img src="resources/1818.jpg" alt="Style 1818"><p class="cake-code">#1818</p></div>
+                <div class="cake-item"><img src="resources/0145.jpg" alt="Style 0145"><p class="cake-code">#0145</p></div>
+                <div class="cake-item"><img src="resources/1239.jpg" alt="Style 1239"><p class="cake-code">#1239</p></div>
+                <div class="cake-item"><img src="resources/8232.jpg" alt="Style 8232"><p class="cake-code">#8232</p></div>
+                <div class="cake-item"><img src="resources/0653.jpg" alt="Style 0653"><p class="cake-code">#0653</p></div>
+                <div class="cake-item"><img src="resources/2186.jpg" alt="Style 2186"><p class="cake-code">#2186</p></div>
+                <div class="cake-item"><img src="resources/3383.jpg" alt="Style 3383"><p class="cake-code">#3383</p></div>
+                <div class="cake-item"><img src="resources/8511.jpg" alt="Style 8511"><p class="cake-code">#8511</p></div>
+                <div class="cake-item"><img src="resources/8842.jpg" alt="Style 8842"><p class="cake-code">#8842</p></div>
+                <div class="cake-item"><img src="resources/5797.jpg" alt="Style 5797"><p class="cake-code">#5797</p></div>
+                <div class="cake-item"><img src="resources/0454.jpg" alt="Style 0454"><p class="cake-code">#0454</p></div>
+                <div class="cake-item"><img src="resources/1142.jpg" alt="Style 1142"><p class="cake-code">#1142</p></div>
+                <div class="cake-item"><img src="resources/5165.jpg" alt="Style 5165"><p class="cake-code">#5165</p></div>
+                <div class="cake-item"><img src="resources/5938.jpg" alt="Style 5938"><p class="cake-code">#5938</p></div>
+                <div class="cake-item"><img src="resources/5946.jpg" alt="Style 5946"><p class="cake-code">#5946</p></div>
+            </div>
+
+            <h3 class="price-tier-title">6 inch/ 8 inch/ 10 inch/ 12 inch: $58/70/88/100</h3>
+            <div class="cake-grid">
+                <div class="cake-item"><img src="resources/2831.jpg" alt="Style 2831"><p class="cake-code">#2831</p></div>
+                <div class="cake-item"><img src="resources/8319.jpg" alt="Style 8319"><p class="cake-code">#8319</p></div>
+                <div class="cake-item"><img src="resources/4300.jpg" alt="Style 4300"><p class="cake-code">#4300</p></div>
+                <div class="cake-item"><img src="resources/7466.jpg" alt="Style 7466"><p class="cake-code">#7466</p></div>
+                <div class="cake-item"><img src="resources/7880.jpg" alt="Style 7880"><p class="cake-code">#7880</p></div>
+                <div class="cake-item"><img src="resources/9257.jpg" alt="Style 9257"><p class="cake-code">#9257</p></div>
+                <div class="cake-item"><img src="resources/1406.jpg" alt="Style 1406"><p class="cake-code">#1406</p></div>
+                <div class="cake-item"><img src="resources/1668.jpg" alt="Style 1668"><p class="cake-code">#1668</p></div>
+                <div class="cake-item"><img src="resources/9221.jpg" alt="Style 9221"><p class="cake-code">#9221</p></div>
+                <div class="cake-item"><img src="resources/7168.jpg" alt="Style 7168"><p class="cake-code">#7168</p></div>
+                <div class="cake-item"><img src="resources/0728.jpg" alt="Style 0728"><p class="cake-code">#0728</p></div>
+                <div class="cake-item"><img src="resources/8267.jpg" alt="Style 8267"><p class="cake-code">#8267</p></div>
+                <div class="cake-item"><img src="resources/3739.jpg" alt="Style 3739"><p class="cake-code">#3739</p></div>
+                <div class="cake-item"><img src="resources/1504.jpg" alt="Style 1504"><p class="cake-code">#1504</p></div>
+                <div class="cake-item"><img src="resources/2325.jpg" alt="Style 2325"><p class="cake-code">#2325</p></div>
+                <div class="cake-item"><img src="resources/7952.jpg" alt="Style 7952"><p class="cake-code">#7952</p></div>
+                <div class="cake-item"><img src="resources/0802.jpg" alt="Style 0802"><p class="cake-code">#0802</p></div>
+                <div class="cake-item"><img src="resources/6711.jpg" alt="Style 6711"><p class="cake-code">#6711</p></div>
+                <div class="cake-item"><img src="resources/2049.jpg" alt="Style 2049"><p class="cake-code">#2049</p></div>
+                <div class="cake-item"><img src="resources/5364.jpg" alt="Style 5364"><p class="cake-code">#5364</p></div>
+                <div class="cake-item"><img src="resources/1816.jpg" alt="Style 1816"><p class="cake-code">#1816</p></div>
+                <div class="cake-item"><img src="resources/6429.jpg" alt="Style 6429"><p class="cake-code">#6429</p></div>
+                <div class="cake-item"><img src="resources/2221.jpg" alt="Style 2221"><p class="cake-code">#2221 (6/8 inch only)</p></div>
+                <div class="cake-item"><img src="resources/2771.jpg" alt="Style 2771"><p class="cake-code">#2771 (6/8 inch only)</p></div>
+            </div>
+
+            <h3 class="price-tier-title">6 inch/ 8 inch/ 10 inch/ 12 inch: $63/75/93/105</h3>
+            <div class="cake-grid">
+                <div class="cake-item"><img src="resources/8415.jpg" alt="Style 8415"><p class="cake-code">#8415</p></div>
+                <div class="cake-item"><img src="resources/9327.jpg" alt="Style 9327"><p class="cake-code">#9327</p></div>
+                <div class="cake-item"><img src="resources/1297.jpg" alt="Style 1297"><p class="cake-code">#1297</p></div>
+                <div class="cake-item"><img src="resources/6679.jpg" alt="Style 6679"><p class="cake-code">#6679</p></div>
+                <div class="cake-item"><img src="resources/1571.jpg" alt="Style 1571"><p class="cake-code">#1571</p></div>
+                <div class="cake-item"><img src="resources/8290.jpg" alt="Style 8290"><p class="cake-code">#8290</p></div>
+                <div class="cake-item"><img src="resources/9543.jpg" alt="Style 9543"><p class="cake-code">#9543</p></div>
+                <div class="cake-item"><img src="resources/5828.jpg" alt="Style 5828"><p class="cake-code">#5828</p></div>
+                <div class="cake-item"><img src="resources/2031.jpg" alt="Style 2031"><p class="cake-code">#2031</p></div>
+                <div class="cake-item"><img src="resources/2832.jpg" alt="Style 2832"><p class="cake-code">#2832</p></div>
+                <div class="cake-item"><img src="resources/4102.jpg" alt="Style 4102"><p class="cake-code">#4102</p></div>
+                <div class="cake-item"><img src="resources/7504.jpg" alt="Style 7504"><p class="cake-code">#7504</p></div>
+                <div class="cake-item"><img src="resources/6742.jpg" alt="Style 6742"><p class="cake-code">#6742 (6/8 inch only)</p></div>
+                <div class="cake-item"><img src="resources/2436.jpg" alt="Style 2436"><p class="cake-code">#2436 (6/8 inch only)</p></div>
+            </div>
+
+            <h3 class="price-tier-title">6 inch/ 8 inch/ 10 inch/ 12 inch: $68/80/98/110</h3>
+            <div class="cake-grid">
+                <div class="cake-item"><img src="resources/8105.jpg" alt="Style 8105"><p class="cake-code">#8105</p></div>
+                <div class="cake-item"><img src="resources/0803.jpg" alt="Style 0803"><p class="cake-code">#0803</p></div>
+                <div class="cake-item"><img src="resources/3972.jpg" alt="Style 3972"><p class="cake-code">#3972</p></div>
+                <div class="cake-item"><img src="resources/9361.jpg" alt="Style 9361"><p class="cake-code">#9361</p></div>
+                <div class="cake-item"><img src="resources/5072.jpg" alt="Style 5072"><p class="cake-code">#5072 (6/8 inch only)</p></div>
+                <div class="cake-item"><img src="resources/2903.jpg" alt="Style 2903"><p class="cake-code">#2903 (6/8 inch only)</p></div>
+                <div class="cake-item"><img src="resources/1989.jpg" alt="Style 1989"><p class="cake-code">#1989 (6/8 inch only)</p></div>
+                <div class="cake-item"><img src="resources/7232.jpg" alt="Style 7232"><p class="cake-code">#7232</p></div>
+                <div class="cake-item"><img src="resources/7743.jpg" alt="Style 7743"><p class="cake-code">#7743</p></div>
+                <div class="cake-item"><img src="resources/0665.jpg" alt="Style 0665"><p class="cake-code">#0665</p></div>
+                <div class="cake-item"><img src="resources/8130.jpg" alt="Style 8130"><p class="cake-code">#8130</p></div>
+                 
+            </div>
+
+            <h3 class="price-tier-title">6 inch/ 8 inch/ 10 inch/ 12 inch: $70/80/95/105</h3>
+            <div class="cake-grid">
+                <div class="cake-item"><img src="resources/0992.jpg" alt="Style 0992"><p class="cake-code">#0992</p></div>
+                <div class="cake-item"><img src="resources/1120.jpg" alt="Style 1120"><p class="cake-code">#1120</p></div>
+                <div class="cake-item"><img src="resources/4033.jpg" alt="Style 4033"><p class="cake-code">#4033 (6/8 inch only)</p></div>
+                
+            </div>
+
+            <h3 class="price-tier-title">6 inch/ 8 inch/ 10 inch/ 12 inch: $73/85/103/115</h3>
+            <div class="cake-grid">
+                <div class="cake-item"><img src="resources/0992.jpg" alt="Style 0992"><p class="cake-code">#0992</p></div>
+                <div class="cake-item"><img src="resources/4033.jpg" alt="Style 4033"><p class="cake-code">#4033 (6/8 inch only)</p></div>
+            </div>
+
+            <h3 class="price-tier-title">6 inch: $150</h3>
+            <div class="cake-grid">
+                <div class="cake-item"><img src="resources/0095.jpg" alt="Style 0095"><p class="cake-code">#0095</p></div> 
+            </div>
+
+            <div class="order-step">
+            <h2 class="step-title">
+                <span class="en">Step II: Pick Your fillings</span>
+                <span class="ko">2단계: 필링 선택</span>
+            </h2>
             <div class="fillings-container">
                 <div class="fillings-list">
-                    <p class="step-text">Choose up to two of the following filling options:</p>
+                    <p class="step-text">
+                        <span class="en">Choose up to two of the following filling options:</span>
+                        <span class="ko">다음 필링 옵션 중 최대 2가지를 선택해 주세요:</span>
+                    </p>
                     <ul class="bullet-list">
-                        <li>Fresh Strawberry</li>
-                        <li>Fresh Mango</li>
-                        <li>Canned Peach</li>
-                        <li>Oreo Cookie Crumbs</li>
-                        <li>Lotus Biscoff Crumbs</li>
-                        <li>KitKat Crumbs</li>
-                        <li>French Butter Cracker</li>
-                        <li>Black Milk Tea Milk Pudding</li>
-                        <li>Matcha Milk Pudding</li>
-                        <li>Coffee Milk Pudding</li>
-                        <li>Coconut Milk Pudding</li>
-                        <li>Chocolate Milk Pudding</li>
+                        <li>
+                            <span class="en">Fresh Strawberry</span>
+                            <span class="ko">생딸기</span>
+                        </li>
+                        <li>
+                            <span class="en">Fresh Mango</span>
+                            <span class="ko">생망고</span>
+                        </li>
+                        <li>
+                            <span class="en">Canned Peach</span>
+                            <span class="ko">복숭아 통조림</span>
+                        </li>
+                        <li>
+                            <span class="en">Oreo Cookie Crumbs</span>
+                            <span class="ko">오레오 쿠키 크럼블</span>
+                        </li>
+                        <li>
+                            <span class="en">Lotus Biscoff Crumbs</span>
+                            <span class="ko">로투스 비스코프 크럼블</span>
+                        </li>
+                        <li>
+                            <span class="en">KitKat Crumbs</span>
+                            <span class="ko">킷캣 크럼블</span>
+                        </li>
+                        <li>
+                            <span class="en">French Butter Cracker</span>
+                            <span class="ko">프렌치 버터 크래커</span>
+                        </li>
+                        <li>
+                            <span class="en">Black Milk Tea Milk Pudding</span>
+                            <span class="ko">블랙 밀크티 우유 푸딩</span>
+                        </li>
+                        <li>
+                            <span class="en">Matcha Milk Pudding</span>
+                            <span class="ko">말차 우유 푸딩</span>
+                        </li>
+                        <li>
+                            <span class="en">Coffee Milk Pudding</span>
+                            <span class="ko">커피 우유 푸딩</span>
+                        </li>
+                        <li>
+                            <span class="en">Coconut Milk Pudding</span>
+                            <span class="ko">코코넛 우유 푸딩</span>
+                        </li>
+                        <li>
+                            <span class="en">Chocolate Milk Pudding</span>
+                            <span class="ko">초콜릿 우유 푸딩</span>
+                        </li>
                     </ul>
-                    <p class="step-text add-on">Extra Charge Fillings Add-on</p>
+                    <p class="step-text add-on">
+                        <span class="en"><b>Extra Charge Fillings Add-on:</b> 6 inch/ 8 inch/ 10 inch/ 12 inch: $8/10/12/15</span>
+                        <span class="ko"><b>추가 요금 필링 옵션:</b> 6인치 / 8인치 / 10인치 / 12인치: $8 / 10 / 12 / 15</span>
+                    </p>
                     <ul class="bullet-list">
-                        <li>Chocolate Crunchy Pearls</li>
-                        <li>Handmade Taro</li>
-                        <li>Handmade Mochi</li>
+                        <li>
+                            <span class="en">Chocolate Crunchy Pearls</span>
+                            <span class="ko">초콜릿 크런치 펄</span>
+                        </li>
+                        <li>
+                            <span class="en">Handmade Taro</span>
+                            <span class="ko">수제 타로</span>
+                        </li>
+                        <li>
+                            <span class="en">Handmade Mochi</span>
+                            <span class="ko">수제 모찌</span>
+                        </li>
                     </ul>
                 </div>
                 <div class="fillings-image">
@@ -550,30 +888,72 @@
             </div>
         </div>
 
-        <div id="contact-info" class="order-step last-step">
-            <h2 class="step-title">Step III: Contact Us to Place An Order</h2>
+<div id="contact-info" class="order-step last-step">
+            <h2 class="step-title">
+                <span class="en">Step III: Contact Us to Place An Order</span>
+                <span class="ko">3단계: 주문 문의</span>
+            </h2>
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h3 class="footer-sub">Our Location</h3>
-                    <p class="footer-text">1578 Win Hentschel Blvd, West Lafayette, IN</p>
+                    <h3 class="footer-sub">
+                        <span class="en">Our Location</span>
+                        <span class="ko">오시는 길</span>
+                    </h3>
+                    <p class="footer-text">
+                        <span class="en">1578 Win Hentschel Blvd, West Lafayette, IN</span>
+                        <span class="ko">1578 Win Hentschel Blvd, West Lafayette, IN</span>
+                    </p>
                     <div class="map-container">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.4749218576944!2d-86.93787142398662!3d40.46475717143188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8812fd79f1d34273%3A0x8c11447fc512e2ac!2s1ny%20Bakery%20%26%20Cafe!5e0!3m2!1sen!2sus!4v1771539642231!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h3 class="footer-sub">Our Hours:</h3>
+                    <h3 class="footer-sub">
+                        <span class="en">Our Hours:</span>
+                        <span class="ko">영업시간:</span>
+                    </h3>
                     <ul class="hours-list">
-                        <li>Sunday: 11am - 8pm</li>
-                        <li>Monday: 11am - 8pm</li>
-                        <li class="closed-day">Tuesday: Closed</li>
-                        <li>Wednesday: 11am - 8pm</li>
-                        <li>Thursday: 11am - 8pm</li>
-                        <li>Friday: 11am - 8pm</li>
-                        <li>Saturday: 11am - 8pm</li>
+                        <li>
+                            <span class="en">Sunday: 11am - 8pm</span>
+                            <span class="ko">일요일: 오전 11시 - 오후 8시</span>
+                        </li>
+                        <li>
+                            <span class="en">Monday: 11am - 8pm</span>
+                            <span class="ko">월요일: 오전 11시 - 오후 8시</span>
+                        </li>
+                        <li class="closed-day">
+                            <span class="en">Tuesday: Closed</span>
+                            <span class="ko">화요일: 휴무</span>
+                        </li>
+                        <li>
+                            <span class="en">Wednesday: 11am - 8pm</span>
+                            <span class="ko">수요일: 오전 11시 - 오후 8시</span>
+                        </li>
+                        <li>
+                            <span class="en">Thursday: 11am - 8pm</span>
+                            <span class="ko">목요일: 오전 11시 - 오후 8시</span>
+                        </li>
+                        <li>
+                            <span class="en">Friday: 11am - 8pm</span>
+                            <span class="ko">금요일: 오전 11시 - 오후 8시</span>
+                        </li>
+                        <li>
+                            <span class="en">Saturday: 11am - 8pm</span>
+                            <span class="ko">토요일: 오전 11시 - 오후 8시</span>
+                        </li>
                     </ul>
-                    <h3 class="footer-sub">Our Number:</h3>
-                    <p class="footer-text">+1 (765) 250-3445</p>
-                    <h3 class="footer-sub">Let's Connect</h3>
+                    <h3 class="footer-sub">
+                        <span class="en">Our Number:</span>
+                        <span class="ko">전화번호:</span>
+                    </h3>
+                    <p class="footer-text">
+                        <span class="en">+1 (765) 250-3445</span>
+                        <span class="ko">+1 (765) 250-3445</span>
+                    </p>
+                    <h3 class="footer-sub">
+                        <span class="en">Let's Connect</span>
+                        <span class="ko">소셜 미디어</span>
+                    </h3>
                     <div class="social-icons">
                         <a href="resources/wechat_add.jpg" target="_blank"><img src="resources/wechat.png" alt="WeChat"></a>
                         <a href="https://www.instagram.com/1nybakerycafe/" target="_blank"><img src="resources/instagram.png" alt="Instagram"></a>
@@ -603,6 +983,23 @@
         <img src="resources/mail.png" alt="Email">
     </a>
 </div>
+
+<script>
+    const langBtn = document.getElementById('lang-btn');
+    
+    langBtn.addEventListener('click', () => {
+        // This toggles the 'korean-mode' class on and off the whole page
+        document.body.classList.toggle('korean-mode');
+        
+        // This changes the text on the button itself
+        if (document.body.classList.contains('korean-mode')) {
+            langBtn.textContent = 'English';
+        } else {
+            langBtn.textContent = '한국어';
+        }
+    });
+</script>
+
 
 </body>
 </html>

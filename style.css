@@ -7,7 +7,8 @@
 
 body {
     margin: 0;
-    font-family: 'Serif', 'Georgia', serif;
+    /* CHANGED: This applies Lora to all the text on your site */
+    font-family: 'Lora', serif; 
     background-color: var(--bg-color);
     color: var(--text-color);
 }
@@ -471,6 +472,60 @@ nav {
     filter: brightness(0.8); /* Slight darken on hover */
 }
 
+.price-tier-title {
+    color: var(--accent-color);
+    font-size: 22px;
+    margin-top: 50px; /* Gives breathing room from the grid above it */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed rgba(181, 141, 72, 0.4); /* Subtle dashed line */
+    font-weight: 500;
+}
+
+.price-tier-title {
+    color: var(--accent-color);
+    font-size: 22px;
+    margin-top: 50px; /* Gives breathing room from the grid above it */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed rgba(181, 141, 72, 0.4); /* Subtle dashed line */
+    font-weight: 500;
+}
+
+/* --- Language Switching Logic --- */
+/* 1. Hide Korean text by default on page load */
+.ko {
+    display: none;
+}
+
+/* 2. When the button adds 'korean-mode' to the body, hide English */
+body.korean-mode .en {
+    display: none;
+}
+
+/* 3. When in 'korean-mode', reveal the Korean text */
+body.korean-mode .ko {
+    display: inline-block; 
+}
+
+/* --- Refined Language Toggle Button --- */
+.lang-btn {
+    background-color: transparent;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color); /* Delicate gold outline */
+    padding: 6px 16px;
+    border-radius: 20px; /* Gives it a smooth pill shape */
+    cursor: pointer;
+    font-family: 'Lora', serif; /* Matches your new site font */
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color); /* Changes text to your beige background color on hover */
+}
 /* Responsive adjustment for mobile */
 @media (max-width: 768px) {
     .floating-island {
@@ -482,6 +537,7 @@ nav {
         height: 25px;
     }
 }
+
 
 /* =========================================
    RESPONSIVE DESIGN (TABLETS & MOBILE)
@@ -522,7 +578,8 @@ nav {
     }
 }
 
-/* --- MOBILE PHONES (Screens smaller than 768px) --- */
+
+
 @media (max-width: 768px) {
     /* Make the navigation wrap nicely */
     nav {
