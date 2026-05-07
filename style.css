@@ -58,107 +58,192 @@ nav {
     font-weight: 500;
 }
 
-/* Hero Section */
-.hero {
-    display: flex;
-    min-height: 80vh; /* Ensures the section has enough height to 'center' vertically */
-    align-items: center; /* Vertically centers both the text-half and the image-half */
-    padding: 0px 40px;
+/* Hero Banner Slider */
+.hero-banner {
+    width: 100%;
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
-.short-number {
-    font-size: 1.25em;           /* Makes it noticeably shorter than NY Cafe */
-    vertical-align: baseline;  /* Keeps it on the same line */
-    display: inline-block;
-    margin-right: -1p;        /* Optional: adjust kerning if it looks too far away */
-    font-weight: bold;
-}
-
-.hero-content {
-    flex: 1.5; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    /* Keeps the block itself centered in the left half */
-    padding-left: 120px;
-}
-
-.hero-content h1, 
-.hero-content .tagline {
-    width: 80%;             /* Give them a defined width so they align relative to each other */
-    text-align: left;       /* Aligns the text inside to the left */
-    margin-left: 0;
-}
-
-.hero-content h1 {
-    font-size: 80px;
-    margin: 0;
-    line-height: 1.1;
-    display: flex;
-    align-items: baseline; /* Ensures the '1' and 'N' sit on the same bottom line */
-}
-
-.hero-content .tagline {
-    font-size: 40px;
-    margin-top: 10px;
-    font-weight: 400;
-}
-
-/* Category Icons */
-.categories {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 10px;
-    margin-top: 15px;
-    width: 80%;      
-    justify-content: center; /* CHANGED from flex-start to center */
-}
-
-.category-item {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    /* ADDED: This forces exactly 3 items per row by calculating 1/3 width minus the gap */
-    flex: 0 0 calc(33.333% - 20px); 
-}
-
-
-.category-item img {
-    width: 150px;               
-    height: 150px;               
-    object-fit: contain;
-    display: block;
-    /* CHANGED: This tells the browser to push equally from the left and right, centering the image */
-    margin: 0 auto 15px auto; 
-    transition: transform 0.3s;
-}
-
-.category-item img:hover {
-    transform: scale(1.1);
-}
-
-/* Main Image with Rounded Gold Border */
-.hero-image .image-border {
-    border: 8px solid var(--accent-color);
-    border-radius: 25px;
-    padding: 0px;
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    min-height: 400px;
     overflow: hidden;
 }
 
-.hero-image {
-    flex: 1; 
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: -50px;
-    padding-right: 150px;
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.hero-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
+.slide.active {
     display: block;
+    animation: fade 1s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4); /* Optional: semi-transparent background for readability */
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.slide-text h1 {
+    font-size: 60px;
+    margin: 0 0 10px 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.slide-text .tagline {
+    font-size: 24px;
+    margin: 0;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Slider Navigation */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: white;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Category Links Section */
+.category-links-section {
+    padding: 40px 20px;
+    background-color: var(--bg-color);
+    border-top: 4px solid var(--accent-color);
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.category-item-link {
+    text-decoration: none;
+    color: inherit;
+    flex: 1;
+    min-width: 180px;
+    max-width: 220px;
+}
+
+.category-card {
+    background-color: #FAF4EB; /* Slightly different from background for contrast */
+    border: 2px solid rgba(181, 141, 72, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    border-color: var(--accent-color);
+}
+
+.category-card img {
+    width: 136px;
+    height: 136px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover img {
+    transform: scale(1.1);
+}
+
+.category-card .en,
+.category-card .ko {
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.category-card .ko {
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: normal;
 }
 
 /* The main 3-column container */
@@ -600,6 +685,20 @@ body.korean-mode .ko {
         font-size: 50px;
     }
 
+    /* New Banner Mobile Styles */
+    .slider-container {
+        min-height: 250px;
+        height: 40vh;
+    }
+    
+    .slide-text h1 {
+        font-size: 36px;
+    }
+    
+    .slide-text .tagline {
+        font-size: 16px;
+    }
+
     /* Wrap the category icons so they don't squish */
     .categories {
         flex-wrap: wrap;
@@ -607,14 +706,25 @@ body.korean-mode .ko {
         justify-content: center; /* Centers them nicely on mobile */
     }
     
-    /* ADD THIS: Resets the 3-column rule so they fit nicely on phones */
-    .category-item {
-        flex: 0 0 auto; 
+    /* New Category Card Mobile Styles */
+    .category-item-link {
+        min-width: 140px; 
+        max-width: 160px;
     }
 
-    .category-item img {
-        width: 100px;
-        height: 100px;
+    .category-card {
+        padding: 15px;
+    }
+
+    .category-card img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    
+    .category-card .en, 
+    .category-card .ko {
+        font-size: 14px;
     }
 
     /* Change menus from 2 columns to 1 single column */
